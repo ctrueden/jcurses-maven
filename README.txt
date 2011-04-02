@@ -1,3 +1,21 @@
+About jcurses-maven:
+
+The configure script provided with Java Curses 0.9.5. did not work for me,
+so rather than debug it, I implemented a simple build system using Maven and
+CMake.
+
+To compile the Java source, simply run "mvn" from the toplevel directory.
+
+To build the native library, use CMake:
+  $ cd target && cmake .. && make
+
+The build has been tested only on Mac OS X but Linux probably works too.
+Windows almost certainly does not work, but the official jcurses 0.9.5
+release comes prebundled with the DLL anyway.
+
+--
+About Java Curses:
+
 1. Preamble
 
 The Java Curses Library is a library, that makes is possible to create text
